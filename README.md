@@ -9,9 +9,9 @@ A Caesar cipher is a type of substitution in which each letter is shifted a cert
 In this project we are going to Implement a Caesar cipher, both encoding, and decoding and result will be printed back for us.
 
 ## Installations
-*SDK
-*JRE
-*IntelliJ
+* SDK
+* JRE
+* IntelliJ
 
 ## Setup
 Run https://github.com/rmogusu/Caesar-Cipher.git
@@ -20,22 +20,22 @@ or download the zip file from github.
 
 After extracting the files, 
 * Open the file with intelJ .
-*Navigate to your terminal 
-*cd IdeaProjects/Caesar-Cipher
+* Navigate to your terminal 
+* cd IdeaProjects/Caesar-Cipher
 * App run
-*you can also run tests with run test
+* you can also run tests with run test
 
 
 
 ## Technologies Used
-*Junit
-*Gradle
-*Java
+* Junit
+* Gradle
+* Java
 
 
 ## BDD(Behaviour Driven Development)
-*Enter text of your choice
-*Enter the  Rotational key of your choice then enter 
+* Enter text of your choice
+* Enter the  Rotational key of your choice then enter 
 * OUTPUT	DESCRIPTION
 * Read your feedback from terminal the application has Deciphered or Ciphered your text
 
