@@ -11,5 +11,13 @@ public class CaesarCipherTest {
         CaesarCipher caesar = new CaesarCipher();
         assertEquals("", caesar.getCipher("", 3));
     }
+    @Test
+    public void getCipher_shouldNotCipherSymbols_symbols() {
 
+        CaesarCipher caesar= new CaesarCipher();
+        assertEquals("-", caesar.getCipher("-", 3));
+
+        String symbols = "1!@#$%^&*(){}/";
+        assertEquals(symbols, caesar.getCipher(symbols, 3));
+    }
 }
