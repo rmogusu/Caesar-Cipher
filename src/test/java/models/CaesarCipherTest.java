@@ -46,4 +46,11 @@ public class CaesarCipherTest {
         assertEquals("C", caesar.getCipher("X", 5));
         assertEquals("Z", caesar.getCipher("C", -3));
     }
+    @Test
+    public void getCipher_shouldCipherWholeAlphabet_alphabets() {
+        String allChars = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+        CaesarCipher caesar = new CaesarCipher();
+        assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD",
+                caesar.getCipher(allChars, -3));
+    }
 }
