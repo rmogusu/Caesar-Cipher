@@ -53,4 +53,10 @@ public class CaesarCipherTest {
         assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD",
                 caesar.getCipher(allChars, -3));
     }
+    @Test
+    public void getCipher_shouldCipher_Encrypt() {
+        CaesarCipher caesar = new CaesarCipher();
+        assertEquals("aoeu-snth", caesar.getCipher("aoeu-snth", 52));
+        assertEquals("cqgw-upvj", caesar.getCipher("aoeu-snth", 54));
+    }
 }
