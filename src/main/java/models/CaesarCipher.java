@@ -22,15 +22,16 @@ public class CaesarCipher {
                 chars[i] = rotateChar(chars[i], rotateBy, 'A', 'Z');
             }
         }
-//    }private  char rotateChar(char c, int rotateBy, char firstChar, char lastChar) {
-//
-//    c += rotateBy;
-//    if (c < firstChar) {
-//        return (char) (c + ALPHABET_SIZE);
-//    }
-//    if (c > lastChar) {
-//        return (char) (c - ALPHABET_SIZE);
-//    }
-//    return c;
-//}
+    }
+    private  char rotateChar(char c, int rotateBy, char firstChar, char lastChar) {
+
+    c += rotateBy;
+    if (c < firstChar) {
+        return (char) (c + ALPHABET_SIZE);
+    }
+    if (c > lastChar) {
+        return (char) (c - ALPHABET_SIZE);
+    }
+    return c;
+   }
 }
