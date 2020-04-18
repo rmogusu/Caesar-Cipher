@@ -59,4 +59,13 @@ public class CaesarCipherTest {
         assertEquals("aoeu-snth", caesar.getCipher("aoeu-snth", 52));
         assertEquals("cqgw-upvj", caesar.getCipher("aoeu-snth", 54));
     }
+    @Test
+    public void getCipher_shouldDecipher_Decrypt() {
+        String s = "aoeu";
+
+        CaesarCipher caesar =new CaesarCipher();
+        String encrypted = caesar.getCipher(s, 2);
+
+        assertEquals(s, caesar.getCipher(encrypted, -2));
+    }
 }
