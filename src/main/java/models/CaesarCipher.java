@@ -6,7 +6,7 @@ import static java.lang.Character.isUpperCase;
 
 public class CaesarCipher {
 
-//    private static final int ALPHABET_SIZE = 26;
+    private static final int ALPHABET_SIZE = 26;
 
     public String getCipher(String message, int rotateBy) {
         rotateBy %= ALPHABET_SIZE;
