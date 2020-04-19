@@ -21,6 +21,9 @@ public class App {
 
                 switch (userChoice) {
                     case "Cipher": {
+                        System.out.println("|    Enter  your text:                                       |");
+                        String stringUserText = bufferedReader.readLine();
+                    }
         }
     }
 }
