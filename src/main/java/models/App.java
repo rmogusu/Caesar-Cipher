@@ -23,6 +23,9 @@ public class App {
                     case "Cipher": {
                         System.out.println("|    Enter  your text:                                       |");
                         String stringUserText = bufferedReader.readLine();
+                        System.out.println("|    Enter your rotational key:                             |");
+                        String integerUserKey = bufferedReader.readLine();
+                        int alphabetRotationKey = Integer.parseInt(integerUserKey);
                     }
         }
     }
