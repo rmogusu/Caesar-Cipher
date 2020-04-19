@@ -55,11 +55,11 @@ public class App {
                         System.out.println("Goodbye!");
                         programRunning = false;
 
-//                        break;
-//                    default:
-//                        System.out.println("I'm sorry, we don't recognize your input");
-//                        break;
-//                }
+                        break;
+                    default:
+                        System.out.println("I'm sorry, we don't recognize your input");
+                        break;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
