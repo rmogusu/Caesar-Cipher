@@ -33,7 +33,22 @@ public class App {
 
                         break;
                     }
+                    case "Decipher": {
+                        System.out.println("|    Enter your text:                                       |");
+                        String stringUserText = bufferedReader.readLine();
+                        System.out.println("|    Enter your rotational key:                             |");
+                        String integerUserKey = bufferedReader.readLine();
+                        int alphabetRotationKey = Integer.parseInt(integerUserKey);
+                        CaesarCipher caesar = new CaesarCipher();
+                        String textMessage = caesar.getCipher(new String(stringUserText), -(alphabetRotationKey));
+
+                        System.out.println("Your result is: " + textMessage.toUpperCase() + " thank you for using Caesar Cipher");
+                        System.out.println("+-----------------------------------------------------------+");
+                        System.out.println( "|                                                           |" );
+                        System.out.println( "|             Made By Rose                                  |" );
+
+
+                        break;
                     }
-        }
     }
 }
