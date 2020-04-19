@@ -16,6 +16,11 @@ public class App {
             System.out.println("| Enter one of the following options: Cipher, Decipher      |");
             System.out.println( "|                                                           |" );
             System.out.println( "|    or Exit                                                |" );
+            try {
+                String userChoice = bufferedReader.readLine();
+
+                switch (userChoice) {
+                    case "Cipher": {
         }
     }
 }
